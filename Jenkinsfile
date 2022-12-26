@@ -18,6 +18,7 @@ pipeline {
         sh 'docker push techjd/dp-alpine:latest'
       }
     }
+  }
   
   post {
     always {
@@ -25,4 +26,4 @@ pipeline {
     }
   }
 }
-}
+
