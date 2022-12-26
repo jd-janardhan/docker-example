@@ -9,7 +9,7 @@ pipeline {
     stage('Login') {
       steps {
       
-        #withCredentials([string(credentialsId: 'dockerId', variable: 'docker_password')]) {
+      
             sh 'docker login -u techjd -p $dockerId'
         
       }
